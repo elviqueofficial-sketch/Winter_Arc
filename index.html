@@ -1,6 +1,21 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1565337747757026');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark">
@@ -548,7 +563,17 @@ html{scroll-behavior:auto}
       <p class="sub">Winter Arc challenge is live. 90 days. One direction.</p>
       <p class="tag">Not a habit tracker. A 90-day system to plan, execute and prove your progress.</p>
     </div>
-    <div class="hero-cta"><button class="cta cta-lg" type="button" data-gumroad-action="buy"><span>Get Arc</span><span class="arr" aria-hidden="true">→</span></button></div>
+    <div class="hero-cta">
+  <button
+    class="cta cta-lg"
+    type="button"
+    data-gumroad-action="buy"
+    onclick="fbq('track', 'InitiateCheckout');"
+  >
+    <span>Get Arc</span>
+    <span class="arr" aria-hidden="true">→</span>
+  </button>
+    </div>
     <i class="cue" aria-hidden="true"></i>
   </section>
 
@@ -684,7 +709,17 @@ html{scroll-behavior:auto}
   <section class="sec" id="mid" aria-labelledby="tmid">
     <h2 class="hl sm rv" id="tmid">Start your arc today.</h2>
     <p class="body rv" style="--d:.08s">One payment. Lifetime access. 7-day full refund.</p>
-    <div class="choice rv" style="--d:.15s"><button class="cta cta-lg" type="button" data-gumroad-action="buy"><span>Get Arc</span><span class="arr" aria-hidden="true">→</span></button></div>
+    <div class="choice rv" style="--d:.15s">
+  <button
+    class="cta cta-lg"
+    type="button"
+    data-gumroad-action="buy"
+    onclick="fbq('track', 'InitiateCheckout');"
+  >
+    <span>Get Arc</span>
+    <span class="arr" aria-hidden="true">→</span>
+  </button>
+    </div>
   </section>
 
   <!-- 05b · Challenges -->
@@ -757,7 +792,10 @@ html{scroll-behavior:auto}
       <p class="wordmark rv" id="tget">Winter Arc</p>
       <p class="price rv" style="--d:.1s">Begin your 90 days.</p>
       <p class="terms rv" style="--d:.2s">One-time purchase · Lifetime access · 7-day full refund · No signup required</p>
-      <div class="choice rv" style="--d:.3s"><button class="cta cta-lg" type="button" data-gumroad-action="buy"><span>Get Arc</span><span class="arr" aria-hidden="true">→</span></button></div>
+      <div class="choice rv" style="--d:.3s"><button class="cta cta-lg" type="button" data-gumroad-action="buy" onclick="fbq('track', 'InitiateCheckout');">
+  <span>Get Arc</span>
+  <span class="arr" aria-hidden="true">→</span>
+      </button>
       <p class="lede rv" style="--d:.4s">Plan your days. Build your streak. Watch 90 days of progress add up.</p>
       <p class="fine rv" style="--d:.45s">7-day full refund · Android app · No signup required · Purchase secured by Dodo Payments.</p>
     </div>
